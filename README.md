@@ -11,7 +11,7 @@
    * Reference: [A Practical Guide to Global Illumination using Photon Maps](https://graphics.stanford.edu/courses/cs348b-00/course8.pdf)
 
 ## Milestone
-Already implemented transmittance term in GGX BRDF importance sampling with some problems on next event estimation.
+Already implemented refractions of transparent objects in GGX BRDF importance sampling with some bugs on next event estimation.
 
 [Scene1](./scenes/cornell-refraction.test) | [Scene2](./scenes/cornell-refraction2.test)
 --- | ---
