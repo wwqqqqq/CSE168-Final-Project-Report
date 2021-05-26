@@ -19,7 +19,7 @@ Already implemented refractions of transparent objects in GGX BRDF importance sa
 
 ## Documentation
 
-Refraction model with path tracing
+Transparent object rendered with GGX refraction model:
 ```
 brdf ggx-refraction
 ior [float] # eta0 = front face index of refraction
