@@ -11,11 +11,18 @@
    * Reference: [A Practical Guide to Global Illumination using Photon Maps](https://graphics.stanford.edu/courses/cs348b-00/course8.pdf)
 
 ## Milestone
-Already implemented refractions of transparent objects in GGX BRDF importance sampling with some bugs on next event estimation.
+1. implemented refractions of transparent objects in GGX BRDF importance sampling with some bugs on next event estimation.
 
 [Scene1](./scenes/cornell-refraction.test) | [Scene2](./scenes/cornell-refraction2.test)
 --- | ---
 ![img1](./images/cornell-refraction.png) | ![img2](./images/cornell-refraction2.png)
+
+2. Load `.obj` files to the scene.
+
+|[Scene](./scenes/obj-loader.test)|
+|---|
+|![img](./images/obj-loader.png)|
+
 
 ## Documentation
 
@@ -25,4 +32,10 @@ brdf ggx-refraction
 ior [float] # eta0 = front face index of refraction
             # eta1 = back face index of refraction
             # ior = eta0 / eta1, default = 1.0
+```
+Load `.obj` file into the scene:
+```
+obj [filename.obj] # use the same commands to specify transforms and material.
+                   # the program will automatically scale and center the model 
+                   # so that the model is within the cube [-1,1]x[-1,1]x[-1,1].
 ```
