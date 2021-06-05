@@ -8,7 +8,9 @@
 2. Add support for `.obj` files
 3. Texture mapping
 4. Photon mapping
-   * Reference: [A Practical Guide to Global Illumination using Photon Maps](https://graphics.stanford.edu/courses/cs348b-00/course8.pdf)
+   * References: 
+     * [A Practical Guide to Global Illumination using Photon Maps](https://graphics.stanford.edu/courses/cs348b-00/course8.pdf)
+     * [Photon Mapping (Global Illumination)](http://www.cs.cmu.edu/afs/cs/academic/class/15462-s15/www/project/p4photon.pdf)
 
 ## Milestone
 1. implemented refractions of transparent objects in GGX BRDF importance sampling with some bugs on next event estimation.
@@ -17,11 +19,13 @@
 --- | ---
 ![img1](./images/cornell-refraction.png) | ![img2](./images/cornell-refraction2.png)
 
-2. Load `.obj` files to the scene.
+2. Load `.obj` files into the scene.
 
 |[Scene](./scenes/obj-loader.test)|
 |---|
-|![img](./images/obj-loader.png)|
+|![img](./images/obj-loader-mis.png)|
+
+3. Texture mapping
 
 
 ## Documentation
