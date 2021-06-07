@@ -25,7 +25,12 @@
 |---|
 |![img](./images/obj-loader-mis.png)|
 
-3. Texture mapping
+3. Photon mapping
+  
+|[Scene](./scenes/cornell-photon.test)|
+|---|
+|![img](./images/cornell-photon%20(3).png)|
+
 
 
 ## Documentation
@@ -42,4 +47,14 @@ Load `.obj` file into the scene:
 obj [filename.obj] # use the same commands to specify transforms and material.
                    # the program will automatically scale and center the model 
                    # so that the model is within the cube [-1,1]x[-1,1]x[-1,1].
+```
+
+Photon mapping:
+```
+integrator photonmapping
+ppl [int] # number of photons per light
+          # default is 100,000
+photonSample [int] # number of photon samples to query at each intersection
+                   # default is 50
+photonSearchRadius [float] # photon search radius
 ```
