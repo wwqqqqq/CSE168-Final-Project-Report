@@ -1,10 +1,10 @@
 #Cornell Box
 size 480 480
 integrator photonmapping
-ppl 3000000
+ppl 4000000
 photonSample 100
-photonSearchRadius 0.01
-spp 1024
+photonSearchRadius 0.04
+spp 512
 importancesampling brdf
 nexteventestimation off
 russianroulette on

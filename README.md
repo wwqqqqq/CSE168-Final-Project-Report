@@ -29,7 +29,7 @@
   
 |[Scene](./scenes/cornell-photon.test)|
 |---|
-|![img](./images/cornell-photon%20(3).png)|
+|![img](./images/cornell-photon2.png)|
 
 
 
