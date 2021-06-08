@@ -33,10 +33,10 @@
 
 4. Texture mapping
 
-|[Path tracing](./scenes/texture.test)|[Photon mapping](./scenes/texture-photon.test) |
-|---| --- |
-| 2048 spp, MIS |512 spp, 4M photons, 0.04 radius|
-|![img](./images/texture.png)|![img](./images/texture-photon.png)|
+|[Path tracing (MIS)](./scenes/texture.test)|[Photon mapping](./scenes/texture-photon.test) | [Path tracing (NEE off)](./scenes/texture-nee-off.test)
+|---| --- | --- |
+| 2048 spp, MIS |512 spp, 4M photons, 0.04 radius| 4096 spp, NEE off |
+|![img](./images/texture.png)|![img](./images/texture-photon.png)|![img](./images/texture-no-nee.png)
 
 ## Documentation
 
