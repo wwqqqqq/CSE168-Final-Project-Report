@@ -59,20 +59,23 @@ Photon mapping:
 integrator photonmapping
 ppl [int] # number of photons per light
           # default is 100,000
-                   # default is 50
 photonSearchRadius [float] # photon search radius
+                           # default = 0.1
 ```
 
 Load textures:
 *In `.test` files*
 ```
-texture [textureFile.ppm] # texture file, only support one texture for a scene
-texCoord [x] [y] # define texture coordinates
+texture [textureFile] # texture file (hdr, ppm format)
+                      # only support one texture for a scene
+texCoord [x] [y]      # define a vertex (x,y) 
+                      # in the texture coordinate
 texTri [v1] [v2] [v3] [t1] [t2] [t3] # define triangles with textures
 ```
 
 *In `.obj` files*
 ```
-vt [texCoord.x] [texCoord.y] # define texture coordinates
-f v1/t1/vn1 v2/t2/vn2 v3/t3/vn3 # define triangle faces with vertices, texture coordinates, and normals
+vt x y                          # define a vertex (x,y) in texture coordinates
+f v1/t1/vn1 v2/t2/vn2 v3/t3/vn3 # define triangle faces with vertices, 
+                                # texture coordinates, and normals
 ```
