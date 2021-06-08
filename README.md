@@ -31,7 +31,12 @@
 |---|
 |![img](./images/cornell-photon2.png)|
 
+4. Texture mapping
 
+|[Path tracing](./scenes/texture.test)|[Photon mapping](./scenes/texture-photon.test) |
+|---| --- |
+| 2048 spp, MIS |512 spp, 4M photons, 0.04 radius|
+|![img](./images/texture.png)|![img](./images/texture-photon.png)|
 
 ## Documentation
 
@@ -54,7 +59,20 @@ Photon mapping:
 integrator photonmapping
 ppl [int] # number of photons per light
           # default is 100,000
-photonSample [int] # number of photon samples to query at each intersection
                    # default is 50
 photonSearchRadius [float] # photon search radius
+```
+
+Load textures:
+*In `.test` files*
+```
+texture [textureFile.ppm] # texture file, only support one texture for a scene
+texCoord [x] [y] # define texture coordinates
+texTri [v1] [v2] [v3] [t1] [t2] [t3] # define triangles with textures
+```
+
+*In `.obj` files*
+```
+vt [texCoord.x] [texCoord.y] # define texture coordinates
+f v1/t1/vn1 v2/t2/vn2 v3/t3/vn3 # define triangle faces with vertices, texture coordinates, and normals
 ```
